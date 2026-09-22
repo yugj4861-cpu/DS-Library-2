@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int RollNo[5], searchRollNo;
+
+    cout << "Enter 5 Roll Nos: ";
+    for (int i = 0; i < 5; i++) cin >> RollNo[i];
+
+    cout << "Enter Roll No to search: ";
+    cin >> searchRollNo;
+
+    for (int i = 0; i < 5; i++) {
+        if (RollNo[i] == searchRollNo) {
+            cout << "student found\n";
+            return 0; // Yahi se program khatam
+        }
+    }
+
+    cout << "not found\n";
+    return 0;
+}
